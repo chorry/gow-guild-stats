@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+{{super()}}
+{% endblock %}
+
+{% block content %}
+<div class="content">
+  <h1>Week results</h1>
+  <ul>
+    {% for result in results %}
+  <li>parsed data: {{ result.results }} </li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% endblock %}

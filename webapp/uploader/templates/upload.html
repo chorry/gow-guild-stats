@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+{{super()}}
+{{ dropzone.load_css() }}
+{{ dropzone.style('border: 2px dashed #0087F7; margin: 10%; min-height: 400px;') }}
+
+{% endblock %}
+
+{% block content %}
+<div>
+  {{ dropzone.create('uploader_bp.upload') }}
+  {{ dropzone.load_js() }}
+  {{ dropzone.config() }}
+</div>
+
+{% endblock %}

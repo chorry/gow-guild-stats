@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>
+	{% if user and user.email %}
+	Hello, {{ user.email }}
+	{% else %}
+	Hello, anon
+	{%endif %}
+</h1>
+
+<p>Things you can do:</p>
+<a href="/upload">upload</a>
+
+{% endblock %}

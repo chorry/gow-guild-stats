@@ -1,0 +1,13 @@
+pytesseract
+Pillow
+pyocr
+flask
+Flask-Bootstrap
+Flask-Login
+Flask-Security
+Flask-Dropzone
+Flask-Session
+Flask-SQLAlchemy
+Flask-Uploads
+dramatiq
+redis

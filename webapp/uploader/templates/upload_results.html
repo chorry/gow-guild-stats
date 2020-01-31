@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+{% for file in uploaded_list %}
+    <li><img style="height: 150px" src="{{url_for('uploader_bp.render_file', filename=file.filename) }}">{{ file.filename }}</li>
+{% endfor %}
+</div>
+{% endblock %}
